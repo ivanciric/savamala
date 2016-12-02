@@ -4,7 +4,7 @@
 
         var hour = (new Date()).getHours();
 
-        if (hour > 16) {
+        if (hour > 22) {
             demolition();
         }
 
