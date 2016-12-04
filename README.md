@@ -17,7 +17,13 @@ npm install ivanciric/savamala
 ## Node
 
 ```js
-var sm = require('')
+var sm = require('savamala');
+```
+
+## Browser
+
+```html
+<script src="node_modules/savamala/savamala.js"></script>
 ```
 
 # License
