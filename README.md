@@ -1,6 +1,6 @@
 # Savamala
 
-Need some destruction in your life? 
+Need some destruction in your life?  
 Wait 'til the clock strikes 23h and crash your site [savamala](https://www.krik.rs/en/city-officials-behind-savamala-demolition-says-vucic/) style!
 
 # Environment
