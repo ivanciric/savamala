@@ -15,7 +15,7 @@
 
         clearInterval(check);
 
-        if ($('body').length) {
+        if ($) {
 
             $('body').html(
                 '<img src="http://images3.kurir.rs/slika-724x489/savamala-rusenje-foto-n1-shutterstock-ilustracija-1462395748-899387.jpg" />'
@@ -27,4 +27,4 @@
         }
     }
 
-}(jQuery));
+}((typeof module !== undefined && module.exports) ? undefined : jQuery));
