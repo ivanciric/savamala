@@ -1,4 +1,7 @@
-(function ($) {
+(function (isNode) {
+
+    var beforePhotoUrl = 'http://static.mondo.rs/Picture/334802/jpeg/ljudi-savamala-25.jpg';
+    var afterPhotoUrl = 'http://images3.kurir.rs/slika-724x489/savamala-rusenje-foto-n1-shutterstock-ilustracija-1462395748-899387.jpg';
 
     var check = setInterval(function () {
 
@@ -10,16 +13,18 @@
 
     }, 3000);
 
+    if (!isNode) {
+      document.querySelector('body').innerHTML = '<img src="' + beforePhotoUrl + '" />';
+    }
+
 
     function demolition() {
 
         clearInterval(check);
 
-        if ($) {
+        if (!isNode) {
 
-            $('body').html(
-                '<img src="http://images3.kurir.rs/slika-724x489/savamala-rusenje-foto-n1-shutterstock-ilustracija-1462395748-899387.jpg" />'
-            );
+            document.querySelector('body').innerHTML = '<img src="' + afterPhotoUrl + '" />';
 
         } else {
 
@@ -27,4 +32,4 @@
         }
     }
 
-}((typeof module !== undefined && module.exports) ? undefined : jQuery));
+}(typeof module !== 'undefined' && module.exports));
